@@ -1,0 +1,144 @@
+/* Tittle top */
+.tittle-top {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.tittle-top-1 {
+    width: 100%;
+}
+
+.tittle-top-1 p a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.tittle-top-1 p a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.tittle-top-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tittle-top-2 p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.tittle-top-2 .sort-options {
+    padding: 7px 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Tittle main */
+.tittle-main {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tittle-main .container {
+    max-width: 1350px;
+}
+
+.tittle-main-1 {
+    width: 100%;
+    /* position: sticky;
+    top: 150px; */
+}
+
+.tittle-main-1 h5 {
+    background-color: #8CC63E;
+    padding: 10px 15px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.tittle-main-1 span hr {
+    width: 30px;
+    border: 3px solid #000;
+}
+
+.tittle-main-1 .menu {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.tittle-main-1 .menu li {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.tittle-main-1 .menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 16px;
+}
+
+.tittle-main-1 .menu li a:hover {
+    color: #8CC63E;
+}
+
+.tittle-main-1 .menu li .icon-1 {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    cursor: pointer;
+}
+
+.tittle-main-1 .menu hr {
+    margin-top: 0;
+}
+
+.tittle-main-1 .menu li .menu-2,
+.tittle-main-1 .menu li .menu-3 {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #333;
+    padding-left: 20px;
+    display: none;
+}
+
+.tittle-main-1 .menu li .menu-2 li {
+    position: relative;
+}
+
+.tittle-main-1 .menu li .menu-2 li i {
+    margin-left: 7px;
+    cursor: pointer;
+    position: absolute;
+    left: 42%;
+    top: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 750px) {
+    .tittle-top-2 p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .tittle-top-1 p {
+        text-align: center;
+    }
+
+    .tittle-top-2 {
+        margin-bottom: 30px;
+    }
+
+    .tittle-main-1 {
+        display: none;
+    }
+}

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Detail</title>
+
+        <!-- Import Fontawesome -->
+        <link href="./lib/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="./lib/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="./lib/fontawesome/css/solid.css" rel="stylesheet" />
+
+        <!-- Import css bootstrap -->
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Import css OwlCarousel -->
+        <link
+            rel="stylesheet"
+            href="./lib/owlcarousel/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./lib/owlcarousel/assets/owl.theme.default.min.css"
+        />
+
+        <!-- Import styles.css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Import producdetail.css -->
+        <link rel="stylesheet" href="./assets/css/productdetail.css" />
+    </head>
+    <body>
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Nút X  -->
+        <div class="close-moblie">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+
+        <!--------------------------- Header-top ------------------------>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <p>Chào mừng bạn đến với thegioidotap.vn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------- Header-main -------------------------->
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <div class="wrap-main">
+                            <div class="wrap-1">
+                                <div class="logo">
+                                    <a href="/">
+                                        <img
+                                            src="./assets/img/Logo.png"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="search">
+                                    <input
+                                        type="text"
+                                        placeholder="Bạn muốn tìm gì ?"
+                                    />
+                                    <button>
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wrap-2">
+                                <div class="hotline">
+                                    <div class="hotline-icon">
+                                        <i class="fas fa-phone-square"></i>
+                                    </div>
+                                    <div class="hotline-tittle">
+                                        <a href="tel:+0902 77 1186"
+                                            >0902 77 1186</a
+                                        >
+                                        <p>Hotline đặt hàng</p>
+                                    </div>
+                                </div>
+                                <div class="icon-user">
+                                    <i class="fas fa-user"></i>
+                                    <span class="search-ic">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <span class="cart-btn">
+                                        <i id="cart" class="fas fa-shopping-basket">
+                                            <span class="cart-quantity">0</span>
+                                        </i>
+                                    </span>
+                                    <span class="bar-ic">
+                                        <i class="fas fa-bars"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------- Header-bottom ---------------------------->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row menu-main-js">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <ul class="menu-main">
+                            <li>
+                                <a href="/">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a href="./flashsale.html"><span>FLASH SALE</span></a>
+                            </li>
+                            <li>
+                                <a href="./producttittle.html?fashion=Nam">
+                                    ĐỒ TẬP NAM
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <div class="menu-c1">
+                                        <li><h3>Danh mục ĐỒ TẬP NAM</h3></li>
+                                        <span><hr /></span>
+                                        <a href="./producttittle.html?fashion=Nam&type=Áo"><li>Áo Tập Nam</li></a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Áo thun">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Thun
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Áo Polo">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Polo
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Áo ba lỗ">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Tanktop - Ba Lỗ
+                                            </li>
+                                        </a>
+                                        <a href="./producttittle.html?fashion=Nam&type=Quần">
+                                            <li>Quần Tập Nam</li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Quần dài">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Dài
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Quần đùi">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Đùi
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Quần Jogger">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Jogger
+                                            </li>
+                                        </a>
+                                        <a href="./producttittle.html?type=Áo khoác nam"
+                                            ><li>Áo Khoác Thể Thao Nam</li></a
+                                        >
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nam&type=Set-tap"><li>Bộ Đồ Tập Nam</li></a>
+                                    </div>
+                                    <img
+                                        src="./assets/img/TheThaoNam.jpg"
+                                        alt="Anh"
+                                    />
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./producttittle.html?fashion=Nữ">
+                                    ĐỒ TẬP NỮ
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <div class="menu-c1">
+                                        <li><h3>Danh mục ĐỒ TẬP NỮ</h3></li>
+                                        <span><hr /></span>
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo"><li>Áo Tập Nữ</li></a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo bra">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Bra
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo thun">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Thun
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo ba lỗ">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Tanktop - Ba Lỗ
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo croptop">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Áo Croptop
+                                            </li>
+                                        </a>
+                                        <hr />                                       
+                                        <a href="./producttittle.html?fashion=Nữ&type=Quần">
+                                            <li>Quần Tập Nữ</li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Quần dài">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Dài
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Quần lửng">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Lửng
+                                            </li>
+                                        </a>
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Quần Jogger">
+                                            <li>
+                                                <i
+                                                    class="fas fa-angle-right"
+                                                ></i>
+                                                Quần Jogger
+                                            </li>
+                                        </a>
+                                        <hr />                                     
+                                        <a href="./producttittle.html?fashion=Nữ&type=Áo khoác nữ"
+                                            ><li>Áo Khoác Thể Thao Nữ</li></a
+                                        >
+                                        <hr />
+                                        <a href="./producttittle.html?fashion=Nữ&type=Set-tap"><li>Bộ Đồ Tập Nữ</li></a>
+                                    </div>
+                                    <img
+                                        src="./assets/img/DoTapNu.jpg"
+                                        alt="Anh"
+                                    />
+                                </ul>
+                            </li>                          
+                            <li class="menu-2">
+                                <a href="./producttittle.html?fashion=Phụ kiện">
+                                    PHỤ KIỆN
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu-2">
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Thảm"><li>Thảm Tập Yoga</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Túi"><li>Túi Thể Thao</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Găng"><li>Găng Tay</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Băng"><li>Băng Bảo Vệ</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Dây nhảy"><li>Dây Nhảy</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Dây kháng lực"><li>Dây Kháng Lực</li></a>
+                                    <a href="./producttittle.html?fashion=Phụ kiện&type=Chăm sóc"><li>Chăm Sóc Cơ Bắp</li></a>
+                                </ul>
+                            </li>
+                            <li class="menu-2">
+                                <a href="#">
+                                    CỬA HÀNG
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./tintuc.html">SỰ KIỆN</a>
+                            </li>
+                            <li class="menu-2">
+                                <a href="./bai-tap-gym.html">
+                                    BÀI TẬP GYM
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup Moblie  -->
+        <div class="popup-moblie">
+            <div class="search">
+                <input type="text" placeholder="Bạn muốn tìm gì ?" />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="menu-moblie">
+                <ul>
+                    <li><a href="/">TRANG CHỦ</a></li>
+                    <li>
+                        <a href="/flashsale.html"><span>FLASH SALE</span></a>
+                    </li>
+                    <li class="li-moblie">
+                        <a href="./producttittle.html?fashion=Nam">ĐỒ TẬP NAM</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="list-menu-moblie">
+                            <span><a href="./producttittle.html?fashion=Nam&type=Áo">Áo Tập Nam</a></span>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Áo thun">Áo Thun</a></li>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Áo Polo">Áo Polo</a></li>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Áo ba lỗ">Áo Tanktop - Ba Lỗ</a></li>
+                            <span><a href="./producttittle.html?fashion=Nam&type=Quần">Quần Tập Nam</a></span>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Quần dài">Quần Dài</a></li>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Quần đùi">Quần Đùi</a></li>
+                            <li><a href="./producttittle.html?fashion=Nam&type=Quần Jogger">Quần Jogger</a></li>
+                            <span><a href="./producttittle.html?fashion=Nam&type=Áo khoác nam">Áo Khoác Thể Thao Nam</a></span>
+                            <span><a href="./producttittle.html?fashion=Nam&type=Set-tap">Bộ Đồ Tập Nam</a></span>
+                        </ul>
+                    </li>
+                    <li class="li-moblie">
+                        <a href="./producttittle.html?fashion=Nữ">ĐỒ TẬP NỮ</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="list-menu-moblie">
+                            <span><a href="./producttittle.html?fashion=Nữ&type=Áo">Áo Tập Nữ</a></span>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Áo bra">Áo Bra</a></li>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Áo thun">Áo Thun</a></li>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Áo ba lỗ">Áo Tanktop - Ba Lỗ</a></li>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Áo croptop">Áo Croptop</a></li>
+                            <span><a href="./producttittle.html?fashion=Nữ&type=Quần">Quần Tập Nữ</a></span>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Quần dài">Quần Dài</a></li>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Quần lửng">Quần Lửng</a></li>
+                            <li><a href="./producttittle.html?fashion=Nữ&type=Quần Jogger">Quần Jogger</a></li>
+                            <span><a href="./producttittle.html?fashion=Nữ&type=Áo khoác nữ">Áo Khoác Thể Thao Nữ</a></span>
+                            <span><a href="./producttittle.html?fashion=Nữ&type=Set-tap">Bộ Đồ Tập Nữ</a></span>
+                        </ul>
+                    </li>                   
+                    <li class="li-moblie">
+                        <a href="./producttittle.html?fashion=Phụ kiện">PHỤ KIỆN</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="list-menu-moblie">
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Thảm">Thảm Tập Yoga</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Túi">Túi Thể Thao</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Găng">Găng Tay</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Băng">Băng Bảo Vệ</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Dây nhảy">Dây Nhảy</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Dây kháng lực">Dây Kháng Lực</a></li>
+                            <li><a href="./producttittle.html?fashion=Phụ kiện&type=Chăm sóc">Chăm sóc cơ bắp</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-moblie">
+                        <a href="">CỬA HÀNG</a>                       
+                    </li>
+                    <li><a href="./tintuc.html">SỰ KIỆN</a></li>
+                    <li class="li-moblie">
+                        <a href="./bai-tap-gym.html">BÀI TẬP GYM</a>                     
+                    </li>
+                </ul>
+            </div>
+            <div class="hotline">
+                <div class="hotline-icon">
+                    <i class="fas fa-phone-square"></i>
+                </div>
+                <div class="hotline-tittle">
+                    <a href="tel:+0902 77 1186">0902 77 1186</a>
+                    <p>Hotline đặt hàng</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Giỏ hàng -->
+        <div class="cart-modal-overlay">
+            <div class="cart-modal">
+                <i id="close-btn" class="fas fa-times"></i>
+                <h1 class="cart-is-empty">Cart is empty</h1>
+
+                <div class="product-rows">
+                    <!-- Thêm sp vào trong giỏ hàng -->
+                </div>
+                <div class="total">
+                    <h3>GIỎ HÀNG</h3>
+                    <hr>
+                    <span>Chưa có sản phẩm nào trong giỏ hàng.</span>
+                    <a href="./gio-hang.html"><button>Giỏ Hàng</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------- Sản phẩm ---------------------------->
+        <div class="product-detail">
+            <div class="container">
+                <div class="row product-detail-js">
+                    <!-- <div class="col-12 col-sm-12 col-md-12">
+                        <p>
+                            <a href="/">Trang chủ</a> /
+                            <a href="">Đồ tập nam</a> /
+                            <a href="">Áo tập thun nam</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="banner">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/products-nam/Ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-1.png"
+                                        alt="Ảnh banner 1"
+                                    />
+                                </div>
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/products-nam/Ao-thun/ao-ngan-tay-tap-gym-yoga-nam-icado-do-2.png"
+                                        alt="Ảnh banner 2"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="product-detail-tittle">
+                            <h3>Áo Sát Nách Nam Tập Gym Yoga ICADO AT1</h3>
+                            <hr />
+                            <h3>280.000 VNĐ</h3>
+                            <ul>
+                                <li>
+                                    <b>Chất liệu</b>: 88% Polyester, 12%
+                                    spandex, co giãn 4 chiều
+                                </li>
+                                <li>
+                                    <b>Kiểu dáng</b>: Áo thể thao dành cho nam
+                                </li>
+                            </ul>
+                            <h6><span>Hướng dẫn chọn size nam</span></h6>
+                            <b>Hotline tư vấn miễn phí: 0902 77 1186</b>
+                            <h5><a href="">SHOP GẦN NHẤT</a></h5>
+                            <form>
+                                <input
+                                    type="number"
+                                    id="quantity"
+                                    name="quantity"
+                                    min="1"
+                                    value="1"
+                                />
+                                <button type="submit">THÊM VÀO GIỎ HÀNG</button>
+                            </form>
+                            <div class="product-detail-description">
+                                <h4>VÌ SAO CHỌN THEGIOIDOTAP.VN ?</h4>
+                                <ul>
+                                    <li>
+                                        <img src="./assets/img/htcuahang.png" alt="htcuahang">
+                                        <p><b>HỆ THỐNG HƠN 20 CỬA HÀNG </b>(Trên toàn quốc)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/Hotline-lien-he.png" alt="htcuahang">
+                                        <p><b>0902 77 1186 </b>(9:30 - 21:00 mỗi ngày)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/section1.png" alt="htcuahang">
+                                        <p><b>Miễn phí giao hàng </b>(Toàn quốc cho hóa đơn từ 500k)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/Mien-phi-giao-hang.png" alt="htcuahang">
+                                        <p><b>THANH TOÁN TIỆN LỢI </b>(Nhận hàng rồi mới trả tiền)</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/img/section3.png" alt="htcuahang">
+                                        <p><b>ĐỔI HÀNG DỄ DÀNG </b>(Đổi mẫu/size/màu trong 30 ngày)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-detail-description">
+                                <h6>Combo 5 Tặng 1: Mua 5 sản phẩm quần áo nguyên giá, nhận ngay 1 sản phẩm miễn phí</h6>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <img class="modal-img">
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer-left">
+                            <div class="logo">
+                                <img
+                                    src="./assets/img/TGDT_logo-09-2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="footer-left-tittle">
+                                <p>Công ty TNHH Fitness & Yoga Việt Nam</p>
+                                <p>
+                                    <i class="fas fa-home"></i>
+                                    101A-103 Đường 3 tháng 2, P.11, Q.10, Tp.HCM
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone"></i>
+                                    Hotline sỉ: 0907.00.11.86<br />
+                                    Hotline lẻ: 0902 77 1186
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope"></i>
+                                    thegioidotap@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer-center">
+                            <img src="./assets/img/thongbao.png" alt="" />
+                            <ul>
+                                <h4>Về chúng tôi</h4>
+                                <li><a href="">Giới thiệu</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Hệ thống showroom</a></li>
+                            </ul>
+                            <ul>
+                                <h4>Hỗ trợ khách hàng</h4>
+                                <li><a href="">Hướng dẫn mua hàng</a></li>
+                                <li><a href="">Chính sách đổi hàng</a></li>
+                                <li><a href="">Chính sách giao nhận</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer-right">
+                            <img src="./assets/img/banner-footer.jpg" alt="" />
+                            <div>
+                                <a
+                                    href="https://www.dmca.com/Protection/Status.aspx?ID=1857d876-33b5-4d66-af23-5fe5efea61d8&refurl=https://thegioidotap.vn/"
+                                    ><img
+                                        src="./assets/img/dmca_protected_sml_120m.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer-bottom">
+                            <hr />
+                            <p>Công ty TNHH FITNESS & YOGA Việt Nam</p>
+                            <p>
+                                Số ĐKKD 0315236344 do Sở KHĐT Tp. HCM cấp ngày
+                                22/08/2018
+                            </p>
+                            <p>Người đại diện: Trần Ngọc Hoàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Import JS Bootstrap -->
+        <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Import jquery -->
+        <script src="./lib/jquery-3.7.1.min.js"></script>
+        <!-- Import JS OwlCarousel -->
+        <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- Import carousel.js -->
+        <script src="./assets/js/carousel.js"></script>
+        <!-- Import main.js -->
+        <script type="module" src="./assets/js/main.js"></script>
+        <!-- Import productdetail.js -->
+        <script type="module" src="./assets/js/productdetail.js"></script>
+    </body>
+</html>
