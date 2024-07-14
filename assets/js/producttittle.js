@@ -73,7 +73,7 @@ const renderProducts = (products, listEL) => {
                                 />
                             </div>
                         </a>
-                        <a href="">
+                        <a href="productdetail.html?id=${item.id}">
                             <h3>${item.name}</h3>
                         </a>
                         <p>${formattedPrice} VNĐ</p>
