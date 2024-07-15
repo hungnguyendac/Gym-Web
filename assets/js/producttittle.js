@@ -29,8 +29,6 @@ menu2Icon.forEach ( (item, index) => {
 });
 
 
-
-
 // Hàm để lấy giá trị của một query parameter từ URL
 const getQueryParam = (param) => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -47,6 +45,7 @@ const products = data.filter((item) => {
     const matchesType = productType ? item.type.toString().includes(productType) : true;
     return matchesFashion && matchesType;
 });
+
 
 
 const renderProducts = (products, listEL) => {

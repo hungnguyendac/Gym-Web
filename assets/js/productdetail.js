@@ -19,8 +19,12 @@ if (product) {
         <div class="col-12 col-sm-12 col-md-12">
             <p>
                 <a href="/">Trang chủ</a> /
-                <a href="">Đồ tập ${product.fashion}</a> /
-                <a href="">${product.type}</a>
+                <a href="producttittle.html?fashion=${product.fashion}">
+                    Đồ tập ${product.fashion}
+                </a> /
+                <a href="producttittle.html?fashion=${product.fashion}&type=${product.type}">
+                    ${product.type}
+                </a>
             </p>
         </div>
         <div class="col-12 col-sm-6 col-md-6">
@@ -111,23 +115,28 @@ if (product) {
 }
 
 // Sự kiện click Hướng dẫn chọn size (Chưa xong)
-const sizeWM = document.querySelector(".size-guide-women");
 const sizeML = document.querySelector(".size-guide-male");
-
-const close_moblie = document.querySelector(".close-moblie");
+const sizeWM = document.querySelector(".size-guide-women");
 
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
 
-sizeML.addEventListener("click", (e) => {
-    modal.style.display = "block";
-    modalImg.src = "./assets/img/Screenshot-2024-06-30-131608.png";
-    close_moblie.style.display = "inline-block";
-});
+if (sizeML) {
+    sizeML.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = "./assets/img/Screenshot-2024-06-30-131608.png";
+        modal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    });
+} 
 
-sizeWM.addEventListener("click", () => {
-    modal.style.display = "block";
-    modalImg.src = "./assets/img/Screenshot-2024-07-02-143806.png";
-    close_moblie.style.display = "inline-block";
-});
-
+if (sizeWM) {
+    sizeWM.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = "./assets/img/Screenshot-2024-07-02-143806.png";
+        modal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    });
+} 
