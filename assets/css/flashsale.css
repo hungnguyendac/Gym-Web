@@ -90,3 +90,13 @@
         margin-top: 100px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    
+    .products .product p {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
