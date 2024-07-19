@@ -84,6 +84,10 @@ tbody .cart-product-tittle {
     font-weight: 600;
 }
 
+.cart-price-last {
+    text-align: center;
+}
+
 .cart-product-button {
     margin-top: 20px;
 }
@@ -196,7 +200,7 @@ tbody .cart-product-tittle {
     background-color: #7CB342;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 785px) {
     .cart-left {
         margin-bottom: 100px;
     }
