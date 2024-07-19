@@ -51,8 +51,8 @@
 
 .tittle-main-1 {
     width: 100%;
-    /* position: sticky;
-    top: 150px; */
+    position: sticky;
+    top: 150px;
 }
 
 .tittle-main-1 h5 {
