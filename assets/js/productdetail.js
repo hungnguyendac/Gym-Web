@@ -75,7 +75,7 @@ if (product) {
                         min="1"
                         value="1"
                     />
-                    <button type="submit">THÊM VÀO GIỎ HÀNG</button>
+                    <button type="button">THÊM VÀO GIỎ HÀNG</button>
                 </form>
                 <div class="product-detail-description">
                     <h4>VÌ SAO CHỌN THEGIOIDOTAP.VN ?</h4>
