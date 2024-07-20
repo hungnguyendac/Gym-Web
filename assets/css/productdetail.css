@@ -192,6 +192,8 @@ form button:hover {
     transform: translate(-50%, -50%);
 }
 
+/* Màu sắc */
+
 .color-options, .size-options {
     display: flex;
     gap: 10px;
@@ -227,4 +229,12 @@ form button:hover {
     background-color: #000;
     color: #fff;
     border: 2px solid #000;
+}
+
+/* product-detail-tittle */
+
+@media screen and (max-width: 575px) {
+    .product-detail-tittle h3{
+        margin-top: 20px;
+    }
 }
