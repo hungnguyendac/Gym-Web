@@ -191,3 +191,40 @@ form button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.color-options, .size-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.color-option:hover, .color-option.selected {
+    border: 2px solid #000;
+}
+
+.size-option {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.size-option:hover, .size-option.selected {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+}

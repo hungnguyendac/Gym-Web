@@ -22,7 +22,9 @@ if (product) {
                 <a href="producttittle.html?fashion=${product.fashion}">
                     Đồ tập ${product.fashion}
                 </a> /
-                <a href="producttittle.html?fashion=${product.fashion}&type=${product.type}">
+                <a href="producttittle.html?fashion=${product.fashion}&type=${
+        product.type
+    }">
                     ${product.type}
                 </a>
             </p>
@@ -67,6 +69,28 @@ if (product) {
                 }
                 <b>Hotline tư vấn miễn phí: 0902 77 1186</b>
                 <h5><a href="">SHOP GẦN NHẤT</a></h5>
+                <div>
+                    <label for="colors">Màu sắc</label>
+                    <div id="colors" class="color-options">
+                        <!-- Thêm các màu sắc -->
+                        <span class="color-option" style="background-color: black;"></span>
+                        <span class="color-option" style="background-color: red;"></span>
+                        <span class="color-option" style="background-color: brown;"></span>
+                        <span class="color-option" style="background-color: white;"></span>
+                        <span class="color-option" style="background-color: teal;"></span>
+                        <span class="color-option" style="background-color: darkslategray;"></span>
+                        <span class="color-option" style="background-color: blue;"></span>
+                    </div>
+                    <label for="sizes">Size</label>
+                    <div id="sizes" class="size-options">
+                        <!-- Thêm các size -->
+                        <span class="size-option">M</span>
+                        <span class="size-option">L</span>
+                        <span class="size-option">XL</span>
+                        <span class="size-option">2XL</span>
+                        <span class="size-option">3XL</span>
+                    </div>
+                </div>
                 <form>
                     <input
                         type="number"
