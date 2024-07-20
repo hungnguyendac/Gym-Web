@@ -18,7 +18,7 @@ if (product) {
     let HTML = `
         <div class="col-12 col-sm-12 col-md-12">
             <p>
-                <a href="./index.html">Trang chủ</a> /
+                <a href="../index.html">Trang chủ</a> /
                 <a href="producttittle.html?fashion=${product.fashion}">
                     Đồ tập ${product.fashion}
                 </a> /
