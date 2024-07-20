@@ -18,7 +18,7 @@ if (product) {
     let HTML = `
         <div class="col-12 col-sm-12 col-md-12">
             <p>
-                <a href="/">Trang chủ</a> /
+                <a href="./index.html">Trang chủ</a> /
                 <a href="producttittle.html?fashion=${product.fashion}">
                     Đồ tập ${product.fashion}
                 </a> /
@@ -114,7 +114,7 @@ if (product) {
     console.error("Product not found");
 }
 
-// Sự kiện click Hướng dẫn chọn size (Chưa xong)
+// Sự kiện click Hướng dẫn chọn size 
 const sizeML = document.querySelector(".size-guide-male");
 const sizeWM = document.querySelector(".size-guide-women");
 
