@@ -66,13 +66,13 @@ cardBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-    cardModalOverlay.style.transform = "translateX(-200%)";
+    cardModalOverlay.style.transform = "translateX(200%)";
 });
 
 cardModalOverlay.addEventListener("click", (e) => {
     // Kiểm tra xem có ấn vào cart-modal-overlay, đúng -> true, sai -> false
     if (e.target.classList.contains("cart-modal-overlay") == true) {
-        cardModalOverlay.style.transform = "translateX(-200%)";
+        cardModalOverlay.style.transform = "translateX(200%)";
     }
 });
 
