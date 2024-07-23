@@ -54,12 +54,12 @@ faDown.forEach((value, index) => {
     });
 });
 
+/* ----------------------------- Giỏ hàng --------------------------- */
+// Đóng - mở Popup giỏ hàng
 
-/* --------------- Đóng - mở Popup giỏ hàng --------------------------- */
-
-let cardBtn = document.querySelector(".cart-btn");
-let cardModalOverlay = document.querySelector(".cart-modal-overlay");
-let closeBtn = document.querySelector("#close-btn");
+const cardBtn = document.querySelector(".cart-btn");
+const cardModalOverlay = document.querySelector(".cart-modal-overlay");
+const closeBtn = document.querySelector("#close-btn");
 
 cardBtn.addEventListener("click", () => {
     cardModalOverlay.style.transform = "translateX(0)";
