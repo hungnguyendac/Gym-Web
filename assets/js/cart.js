@@ -13,6 +13,8 @@ function increase() {
     value++;
     quantityInput.value = value;
 }
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const cartProductEL = document.querySelector(".cart-product-tittle-js");
     let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];

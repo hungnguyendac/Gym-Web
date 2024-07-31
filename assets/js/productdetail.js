@@ -451,6 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const saveToLocalStorage = (
         imageSrc,
         nameProduct,
+        priceProduct,
         selectedColor,
         selectedSize,
         quantityInput
