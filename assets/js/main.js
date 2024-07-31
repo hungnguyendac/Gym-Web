@@ -105,6 +105,10 @@ buttons.forEach((button) => {
 const renderProducts = (data, listEL, fashionType, limit) => {
     const htmlEL = document.querySelector(listEL);
 
+    if (!htmlEL) {
+        return; // Không tiếp tục nếu phần tử không tồn tại
+    }
+
     let HTML = ``;
     let count = 0;
     data.forEach((item) => {

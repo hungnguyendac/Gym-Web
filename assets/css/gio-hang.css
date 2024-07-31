@@ -12,13 +12,13 @@
 table {
     width: 100%;
     height: auto;
-
 }
 
 tbody .cart-product-tittle {
     border-top: 3px solid gray;
     border-bottom: 1px solid gray;
 }
+
 
 .cart-left .cart-product {
     display: flex;
@@ -96,8 +96,7 @@ tbody .cart-product-tittle {
     background-color: #fff;
     padding: 8px 15px;
     border: 2px solid #8dc73d;
-    position: absolute;
-    bottom: -60px;
+    margin-bottom: 20px;
 }
 
 .cart-left .button-back i {
@@ -200,9 +199,10 @@ tbody .cart-product-tittle {
     background-color: #7CB342;
 }
 
+
 @media screen and (max-width: 785px) {
     .cart-left {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 

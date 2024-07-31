@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trang giỏ hàng | Thế giới đồ tập</title>
+        <title>Thanh Toán</title>
 
         <!-- Import Fontawesome -->
         <link href="./lib/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -26,8 +26,7 @@
         <!-- Import styles.css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
 
-        <!-- Import gio-hang.css -->
-        <link rel="stylesheet" href="./assets/css/gio-hang.css" />
+        <link rel="stylesheet" href="./assets/css/thanh-toan.css" />
     </head>
     <body>
         <div id="overlay" class="overlay"></div>
@@ -633,169 +632,136 @@
             </div>
         </div>
 
-        <!-- Nội dung giỏ hàng -->
-        <div class="cart-main">
+        <!-- Nội dung -->
+        <div class="thanh-toan">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
-                        <div class="cart-left">
-                            <table>
+                        <div class="thanh-toan-left">
+                            <h4>Thông Tin Thanh Toán</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="lastName">Họ *</label>
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        placeholder="Họ của bạn"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName">Tên *</label>
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        placeholder="Tên của bạn"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại *</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        placeholder="Số điện thoại của bạn"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="Email của bạn"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="dia-chi"
+                                        >Địa chỉ của bạn *</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="dia-chi"
+                                        placeholder="Địa chỉ của bạn"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="order">
+                            <h4>Đơn hàng của bạn</h4>
+                            <table class="order-table">
                                 <thead>
-                                    <th>Sản phẩm</th>
-                                    <th class="cart-left-price">Giá</th>
-                                    <th >Số lượng</th>
-                                    <th class="provisional">Tạm tính</th>
+                                    <tr>
+                                        <th>SẢN PHẨM</th>
+                                        <th>TẠM TÍNH</th>
+                                    </tr>
                                 </thead>
-                                <tbody class="cart-product-tittle-js">
-                                    <!-- <tr>
-                                        <td class="cart-product">
-                                            <i class="far fa-times-circle"></i>
-                                            <img
-                                                src="./assets/img/ao-ba-lo-nam-tap-gym-yoga-icado-at2-5.png"
-                                                alt="abc"
-                                            />
-                                            <span>
-                                                <a href=""
-                                                    >Áo Ba Lỗ Nam Tập Gym Yoga
-                                                    ICADO AT2</a
-                                                >
-                                                <p>Màu sắc: Đen SIZE: L</p>
-                                            </span>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Set Đồ Tập Gym Yoga Nữ Bra HN58 Quần
+                                            Legging Icado AT12 - L × 1
                                         </td>
-                                        <td class="cart-price">295,000VNĐ</td>
-                                        <td class="quantity-input">
-                                            <button
-                                                class="quantity-button"
-                                                onclick="decrease()"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                id="quantity"
-                                                value="1"
-                                                readonly
-                                            />
-                                            <button
-                                                class="quantity-button"
-                                                onclick="increase()"
-                                            >
-                                                +
-                                            </button>
+                                        <td>500,000VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Set Tập Gym Yoga Nam Áo Thun Icado
+                                            AT42 Quần Đùi Icado AT20 - XL × 1
                                         </td>
-                                        <td class="cart-price cart-price-last">295,000VNĐ</td>
-                                    </tr> -->
-                                    
+                                        <td>660,000VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Áo Polo Tập Gym Yoga Nam High Class
+                                            ICADO AT44 × 1
+                                        </td>
+                                        <td>320,000VND</td>
+                                    </tr>
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Tạm tính</td>
+                                        <td>1,480,000VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giao hàng</td>
+                                        <td>
+                                            <label>
+                                                <input
+                                                    type="radio"
+                                                    name="shipping"
+                                                    checked
+                                                />
+                                                20,000VND </label
+                                            ><br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tổng</td>
+                                        <td>1,500,000VND</td>
+                                    </tr>
+                                </tfoot>
                             </table>
-                            <span class="button-back">
-                                <i class="fa-solid fa-arrow-left-long"></i>
-                                <a href="">Tiếp tục xem sản phẩm</a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <div class="cart-right">
-                            <!-- <div class="cart-header">CỘNG GIỎ HÀNG</div>
-                            <div class="cart-item">
-                                <span class="item-label">Tạm tính</span>
-                                <span class="item-value">295,000VNĐ</span>
-                            </div>
-                            <div class="cart-item">
-                                <span class="item-label">Phí Giao Hàng</span>
-                                <span class="item-value">20,000VNĐ</span>
-                            </div>
-                            <div class="cart-total">
-                                <span class="total-label">Tổng</span>
-                                <span class="total-value">315,000VNĐ</span>
-                            </div>
-                            <button class="checkout-button">
-                                TIẾN HÀNH THANH TOÁN
-                            </button> -->
-                            <!-- <div class="discount-section">
-                                <div class="discount-label">Phiếu ưu đãi</div>
-                                <input
-                                    type="text"
-                                    class="discount-input"
-                                    placeholder="Mã ưu đãi"
-                                />
-                                <button class="apply-button">Áp dụng</button>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-4">
-                        <div class="footer-left">
-                            <div class="logo">
-                                <img
-                                    src="./assets/img/TGDT_logo-09-2.png"
-                                    alt="a"
-                                />
-                            </div>
-                            <div class="footer-left-tittle">
-                                <p>Công ty TNHH Fitness & Yoga Việt Nam</p>
+                            <div class="payment-method">
+                                <h3>Trả tiền mặt khi nhận hàng</h3>
                                 <p>
-                                    <i class="fas fa-home"></i>
-                                    101A-103 Đường 3 tháng 2, P.11, Q.10, Tp.HCM
-                                </p>
-                                <p>
-                                    <i class="fas fa-phone"></i>
-                                    Hotline sỉ: 0907.00.11.86<br />
-                                    Hotline lẻ: 0902 77 1186
-                                </p>
-                                <p>
-                                    <i class="fas fa-envelope"></i>
-                                    thegioidotap@gmail.com
+                                    Quý khách vui lòng thanh toán tiền mặt cho
+                                    nhân viên giao hàng
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4">
-                        <div class="footer-center">
-                            <img src="./assets/img/thongbao.png" alt="ads" />
-                            <ul>
-                                <h4>Về chúng tôi</h4>
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Chính sách bảo mật</a></li>
-                                <li><a href="./shop.html">Hệ thống showroom</a></li>
-                            </ul>
-                            <ul>
-                                <h4>Hỗ trợ khách hàng</h4>
-                                <li><a href="#">Hướng dẫn mua hàng</a></li>
-                                <li><a href="#">Chính sách đổi hàng</a></li>
-                                <li><a href="#">Chính sách giao nhận</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4">
-                        <div class="footer-right">
-                            <img src="./assets/img/banner-footer.jpg" alt="afe" />
-                            <div>
-                                <a
-                                    href="https://www.dmca.com/Protection/Status.aspx?ID=1857d876-33b5-4d66-af23-5fe5efea61d8&refurl=https://thegioidotap.vn/"
-                                    ><img
-                                        src="./assets/img/dmca_protected_sml_120m.png"
-                                        alt="fd"
-                                /></a>
+                            <div class="terms">
+                                <label>
+                                    <input type="checkbox" /> Tôi đã đọc và đồng
+                                    ý với điều khoản và điều kiện của website *
+                                </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4">
-                        <div class="footer-bottom">
-                            <hr />
-                            <p>Công ty TNHH FITNESS & YOGA Việt Nam</p>
-                            <p>
-                                Số ĐKKD 0315236344 do Sở KHĐT Tp. HCM cấp ngày
-                                22/08/2018
+                            <button class="order-button">ĐẶT HÀNG</button>
+                            <p class="privacy-note">
+                                Thông tin cá nhân của bạn sẽ được sử dụng để xử
+                                lý đơn hàng, tăng trải nghiệm sử dụng website,
+                                và cho các mục đích khác đã được mô tả trong
+                                chính sách riêng tư của chúng tôi.
                             </p>
-                            <p>Người đại diện: Trần Ngọc Hoàng</p>
                         </div>
                     </div>
                 </div>
@@ -811,10 +777,9 @@
         <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
         <!-- Import carousel.js -->
         <script src="./assets/js/carousel.js"></script>
+        <!-- Import productdetail.js -->
+        <script type="module" src="./assets/js/productdetail.js"></script>
         <!-- Import main.js -->
         <script type="module" src="./assets/js/main.js"></script>
-        <!-- Import cart.js -->
-        <script src="./assets/js/cart.js"></script>
-        
     </body>
 </html>
